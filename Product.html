@@ -18,12 +18,7 @@
 
 </head>
 <body>  
-  <!-- jQuery Version 1.11.0 -->  
-  <script src="js/jquery-1.11.1.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->  
-  <script src="js/bootstrap.js"></script> 
-  
+ 
   <!-----------------------navbar start------------------------------------------->
   
   <!-- Navigation -->  
@@ -125,21 +120,7 @@
 	
 <ul class="row">      
 	<li>
-	<div class="col-sm-4 col-md-3">        
-	<h3>Categories</h3>        
-	<div class="list-group">          
-	<<a href="category.html" class="list-group-item">Medical Accessories</a>          
-	<a href="category.html" class="list-group-item">Baby Products</a>          
-	<a href="category.html" class="list-group-item">Beauty Products</a>          
-	<a href="category.html" class="list-group-item">Skin Product</a>          
-	<a href="category.html" class="list-group-item">Rare &amp; Exclusive</ a>          
-	<a href="category.html" class="list-group-item">Fever</a>          
-	<a href="category.html" class="list-group-item">Anti-Biotics</a>          
-	<a href="category.html" class="list-group-item">Hair Care</a>         
-	</div>      
-	</div>    
-	</div>  
-	</div><!-- /.container class with content as the id--> 
+	
 
 	
 <!--------------------About Product-------------->	
@@ -156,10 +137,23 @@
 	</li>
 
 <form role="form">                
-<div class="number form-group">                  
-<label class="control-label" for="number">Number</ label>                  
-<input type="number" class="form-control input-sm" id="number" />                
-</div>
+<p>Select No. of Product: </p>
+<input id="id1" type="number" max="10" min="1">
+<button onclick="myFunction()">OK</button>
+
+
+<script> 
+function myFunction() {
+	var txt = "";
+    if (document.getElementById("id1").validity.rangeOverflow) {
+        txt = "Value too large";
+    } else {
+        txt = "Input OK";
+    } 
+    document.getElementById("demo").innerHTML = txt;
+
+}
+</script>
     
     <div class="form-group">                  
 	<label>Quantity</label>
@@ -170,37 +164,20 @@
 	</div>                
 	</div>
     <div class="form-group">                  
-	<button type="submit" class="btn btndefault">Contact Seller</button>                  
-	<button type="submit" class="btn btn-success">Add to Cart</button>                
+	<form>
+		<input type="button" value="Contact Seller" onclick="openWin()">
+	</form>
+	
+	<form>
+		<input type="button" value="Add to Cart" onclick="openCart()">
+	</form>              
 	</div>              
 	</form> 
 
 	
 	
 <div class="col-md-9">
-    <div class="thumbnail">          
-	<div class="row">            
-	<div class="col-sm-6">              
-	<img class="img-responsive" src="http://placehold. it/750x600" alt="" />              
-	<div class="thumbnails row">     
-	
-	<div class="col-xs-3">                  
-	<a href="#"><img src="" alt="" class="img-thumbnail img-responsive" /></a> 
-	</div> 
-	<div class="col-xs-3">  
-	<a href="#"><img src="" alt="" class="img-thumbnail img-responsive" /></a>
-	</div>                
-	<div class="col-xs-3">                  
-	<a href="#"><img src="" alt="" class="img-thumbnail img-responsive" /></a>                
-	</div>                
-	<div class="col-xs-3"> 
-	<a href="#"><img src="" alt="" class="img-thumbnail img-responsive" /></a>                
-	</div>              
-	</div>            
-	</div>        
-	</div>
-</div>
-	
+
 	</li>
 </ul>	
 
@@ -220,10 +197,43 @@
 </p>          
 </div>        
 </div>
-<div class="well">
-<div class="text-right">            
-<a class="btn btn-success">Leave a Review</a>          
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalreview">Leave a Review</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalreview" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Leave a Review</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+		<label class="col-sm- control-label">
+		<button type="button" class="btn btn-default">SUBMIT</button>
+		</label>
+		<div class="col-sm-8">
+		<input type="text" name="review" placeholder="ENTER YOUR REVIEW" class="form-control" id="reviewId"/>
+		</div>
+		</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
 </div>
+
+
 <!----------Detail End----->
 
 <!-----Review--------->
@@ -247,18 +257,32 @@
 <!-----Review End----->
 <!--------------------About Product-------------->
 	
-<div class="container">    
-	<hr />    
-	<!-- Footer -->    
-	<footer>      
-	<div class="row">        
-	<div class="col-lg-12">          
-	<p>&copy; <a href="ecommerce.html"> </a> </p>        
-	</div>      
-	</div>    
-	</footer>  
-	</div>
+<!------------------------Footer---------------------------------------->
+<footer class="page-footer" style="background-color: rgb(4, 36, 48); color: white; margin-top: 26px; padding: 12px 8px 8px; margin-bottom: 0px; font-size: 14px; text-align: center;">
+	<div class="container">
+	<div style="margin-bottom: 24px;">
+	<a href="/aboutUs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">About Us</a>
+	<a href="/contactUs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Contact Us</a>
+	<a href="/faqs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">FAQ's</a>
+	<a href="/tnc" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Terms &amp; Conditions</a>
+	<a href="/privacyPolicy" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Privacy Policy</a>
+	<a href="/cancellationRefunds" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Cancellation &amp; Refunds</a>
 	
+	</div>
+	<div style="margin-bottom: 24px;">
+	<a href="https://www.facebook.com/1mgOfficial" target="_blank" title="Like us on Facebook" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Like us on Facebook" src="/assets/images/facebook.svg" style="height: 100%;"></a>
+	<a href="https://twitter.com/1mgofficial" target="_blank" title="Follow us on Twitter" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Follow us on Twitter" src="/assets/images/twitter.svg" style="height: 100%;"></a>
+	<a href="https://plus.google.com/+Healthkartplus" target="_blank" title="Follow us on Google+" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Folow us on Google+" src="/assets/images/google-plus.svg" style="height: 100%;"></a>
+	<div class="footer-copyright" style="height: initial; line-height: initial;">
+	<div class="container">
+	<div style="margin-bottom: 12px;">© 2017 </div>
+	<div style="width: 100%; height: 56px; text-align: center; vertical-align: middle; padding: 12px;">
+	<span style="vertical-align: middle; height: 100%; display: inline-block;"></span><img alt="MEDI-STORE" src="/assets/images/footer-logo.svg" style="max-width: 100%; max-height: 100%; vertical-align: middle; display: initial;">
+	</div>
+	</div>
+	</div>
+	</footer>
+<!------------------------Footer Ends---------------------------------------->
 	
   <script src="js/jquery-1.11.1.js"></script>
   

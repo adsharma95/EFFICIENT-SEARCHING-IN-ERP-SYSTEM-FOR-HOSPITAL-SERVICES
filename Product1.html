@@ -3,7 +3,10 @@
 <head>  
 <meta charset="utf-8">  
 <meta http-equiv="X-UA-Compatible" content="IE=edge">  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <meta name="description" content="">
 <meta name="author" content="">
   
@@ -15,14 +18,19 @@
   <!-- Custom CSS -->  
   <link rel="stylesheet" type="text/css" href="style.css">
   
+ <script>
+function openWin() {
+    window.open("Seller.php");
+}
+function openCart() {
+    window.open("cart.php");
+}
+
+</script> 
 
 </head>
 <body>  
-  <!-- jQuery Version 1.11.0 -->  
-  <script src="js/jquery-1.11.1.js"></script>
-
-  <!-- Bootstrap Core JavaScript -->  
-  <script src="js/bootstrap.js"></script> 
+  
   
   <!-----------------------navbar start------------------------------------------->
   
@@ -77,46 +85,28 @@
 
 
   <!-- Modal -->  
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">    
-  <div class="modal-dialog">      
-  <div class="modal-content">        
-  <div class="modal-header">          
-  <button type="button" class="close" datadismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>          
-  <h2 class="modal-title" id="myModalLabel">Sign in</h2>        
-  </div>        
-  <div class="modal-body">          
-  <form class="form-signin" role="form">            
-  <h3 class="form-signin-heading">Sign in with your email address</h3>            
-  <div class="form-group">              
-  <input type="email" class="form-control" placeholder="Email address" required autofocus>            
-  </div>            
-  <div class="form-group">              
-  <input type="password" class="form-control" placeholder="Password" required>            
-  </div>            
-  <div class="checkbox">              
-  <label>                
-  <input type="checkbox" value="remember-me"> Remember me              
-  </label>            
-  </div>            
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>          
-  </form>        
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
   </div>
-  <div class="row">          
-  <div class="col-xs-3">            
-  <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>          
-  </div>          
-  <div class="col-xs-3">            
-  <a href="" class="btn btn-twitter btn-large btn-caps btnblock">Twitter <span class="icon-twitter"></span></a> 
-  </div>          
-  <div class="col-xs-3">  
-  <a href="" class="btn btn-lg btn-caps btn-block"><span class="icon-dribbble"></span></a>          
-  </div>        
-  </div>
-  <div class="modal-footer">        
-  </div>      
-  </div>    
-  </div>  
-  </div> 
+  
+</div>
+
   <!---Modal End------> 
   
    
@@ -125,21 +115,8 @@
 	
 <ul class="row">      
 	<li>
-	<div class="col-sm-4 col-md-3">        
-	<h3>Categories</h3>        
-	<div class="list-group">          
-	<<a href="category.html" class="list-group-item">Medical Accessories</a>          
-	<a href="category.html" class="list-group-item">Baby Products</a>          
-	<a href="category.html" class="list-group-item">Beauty Products</a>          
-	<a href="category.html" class="list-group-item">Skin Product</a>          
-	<a href="category.html" class="list-group-item">Rare &amp; Exclusive</ a>          
-	<a href="category.html" class="list-group-item">Fever</a>          
-	<a href="category.html" class="list-group-item">Anti-Biotics</a>          
-	<a href="category.html" class="list-group-item">Hair Care</a>         
-	</div>      
-	</div>    
 	</div>  
-	</div><!-- /.container class with content as the id--> 
+	 
 
 	
 <!--------------------About Product-------------->	
@@ -149,7 +126,7 @@
 	<img src="https://res.cloudinary.com/du8msdgbj/image/upload/w_380,h_380,c_fit,a_ignore,q_60/v1477031111/jozh0uvrf2hi9xo6lyfz.jpg" alt="">
 	<li>
 	<div class="col-sm-6"> 
-	 <h4 class="pull-right">Price: Rs. 135</h4>              
+	 <h1 class="pull-right"><strong>Price: Rs. 135</strong></h1>              
 	 <h4><a href="product.html">HIMALAYA ASHVAGANDHA TABLET</a></h4>              
 	 <p>Ashvagandha Tablet is pure herb extract that contains Ashvagandha (Withania somnifera). Ashvagandha rejuvenates the mind and helps to increase the immunity. Ashvagandha is also referred to as to as “Indian ginseng” as it acts as a natural stress reliever. Ashvagandha Tablet maintains a healthy balance between the nervous system, endocrine glands and immune system. It also helps in boosting up the sexual energy in men. Ashvagandha is traditionally referred to as an aphrodisiac which promotes sexual health by uplifting the mood, reducing anxiety, improving energy levels and fertility.<br><br>
  
@@ -164,50 +141,49 @@
 	</li>
 
 <form role="form">                
-<div class="number form-group">                  
-<label class="control-label" for="number">Number</ label>                  
-<input type="number" class="form-control input-sm" id="number" />                
-</div>
-    
+<p>Select No. of Product: </p>
+<input id="id1" type="number" max="10" min="1">
+<button onclick="myFunction()">OK</button>
+
+
+<script> 
+function myFunction() {
+	var txt = "";
+    if (document.getElementById("id1").validity.rangeOverflow) {
+        txt = "Value too large";
+    } else {
+        txt = "Input OK";
+    } 
+    document.getElementById("demo").innerHTML = txt;
+
+}
+</script>
+
+    <form>
     <div class="form-group">                  
+	<div class="btn-group">
 	<label>Quantity</label>
-	<div class="btn-group">                    
+	                    
 	<button type="button" class="btn btn-default">60-T Pack</button>                    
 	<button type="button" class="btn btn-default">80-T Pack</button>                    
 	<button type="button" class="btn btn-default">100-T Pack</button>                    
 	</div>                
-	</div>
-    <div class="form-group">                  
-	<button type="submit" class="btn btndefault">Contact Seller</button>                  
-	<button type="submit" class="btn btn-success">Add to Cart</button>                
+	
+       
+	<form>
+		<input type="button" value="Contact Seller" onclick="openWin()">
+	</form>
+	
+	<form>
+		<input type="button" value="Add to Cart" onclick="openCart()">
+	</form>
 	</div>              
 	</form> 
 
 	
 	
 <div class="col-md-9">
-    <div class="thumbnail">          
-	<div class="row">            
-	<div class="col-sm-6">              
-	<img class="img-responsive" src="http://placehold. it/750x600" alt="" />              
-	<div class="thumbnails row">     
-	
-	<div class="col-xs-3">                  
-	<a href="#"><img src="" alt="" class="img-thumbnail img-responsive" /></a> 
-	</div> 
-	<div class="col-xs-3">  
-	<a href="#"><img src="" alt="" class="img-thumbnail img-responsive" /></a>
-	</div>                
-	<div class="col-xs-3">                  
-	<a href="#"><img src="" alt="" class="img-thumbnail img-responsive" /></a>                
-	</div>                
-	<div class="col-xs-3"> 
-	<a href="#"><img src="" alt="" class="img-thumbnail img-responsive" /></a>                
-	</div>              
-	</div>            
-	</div>        
-	</div>
-</div>
+
 	
 	</li>
 </ul>	
@@ -223,7 +199,7 @@
 	Use under medical supervision </p>                      
 </div>          
 <div class="ratings">            
-<p class="pull-right">Reviews</p>            
+<p class="pull-right"></p>            
 <p>              
 <span class="glyphicon glyphicon-star"></span>              
 <span class="glyphicon glyphicon-star"></span>              
@@ -234,10 +210,44 @@
 </p>          
 </div>        
 </div>
-<div class="well">
-<div class="text-right">            
-<a class="btn btn-success">Leave a Review</a>          
+
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalreview">Leave a Review</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalreview" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Leave a Review</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+		<label class="col-sm- control-label">
+		<button type="button" class="btn btn-default">SUBMIT</button>
+		</label>
+		<div class="col-sm-8">
+		<input type="text" name="review" placeholder="ENTER YOUR REVIEW" class="form-control" id="reviewId"/>
+		</div>
+		</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
 </div>
+
+
 <!----------Detail End----->
 
 <!-----Review--------->
@@ -261,18 +271,33 @@
 <!-----Review End----->
 <!--------------------About Product-------------->
 	
-<div class="container">    
-	<hr />    
-	<!-- Footer -->    
-	<footer>      
-	<div class="row">        
-	<div class="col-lg-12">          
-	<p>&copy; <a href="ecommerce.html"> </a> </p>        
-	</div>      
-	</div>    
-	</footer>  
-	</div>
+<!------------------------Footer---------------------------------------->
+<footer class="page-footer" style="background-color: rgb(4, 36, 48); color: white; margin-top: 26px; padding: 12px 8px 8px; margin-bottom: 0px; font-size: 14px; text-align: center;">
+	<div class="container">
+	<div style="margin-bottom: 24px;">
+	<a href="/aboutUs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">About Us</a>
+	<a href="/contactUs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Contact Us</a>
+	<a href="/faqs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">FAQ's</a>
+	<a href="/tnc" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Terms &amp; Conditions</a>
+	<a href="/privacyPolicy" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Privacy Policy</a>
+	<a href="/cancellationRefunds" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Cancellation &amp; Refunds</a>
 	
+	</div>
+	<div style="margin-bottom: 24px;">
+	<a href="https://www.facebook.com/1mgOfficial" target="_blank" title="Like us on Facebook" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Like us on Facebook" src="/assets/images/facebook.svg" style="height: 100%;"></a>
+	<a href="https://twitter.com/1mgofficial" target="_blank" title="Follow us on Twitter" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Follow us on Twitter" src="/assets/images/twitter.svg" style="height: 100%;"></a>
+	<a href="https://plus.google.com/+Healthkartplus" target="_blank" title="Follow us on Google+" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Folow us on Google+" src="/assets/images/google-plus.svg" style="height: 100%;"></a>
+	<a href="https://www.linkedin.com/company/5230742" target="_blank" title="Visit us on LinkedIn" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Visit us on LinkedIn" src="/assets/images/linkedin.svg" style="height: 100%;"></a></div></div>
+	<div class="footer-copyright" style="height: initial; line-height: initial;">
+	<div class="container">
+	<div style="margin-bottom: 12px;">© 2017 </div>
+	<div style="width: 100%; height: 56px; text-align: center; vertical-align: middle; padding: 12px;">
+	<span style="vertical-align: middle; height: 100%; display: inline-block;"></span><img alt="MEDI-STORE" src="/assets/images/footer-logo.svg" style="max-width: 100%; max-height: 100%; vertical-align: middle; display: initial;">
+	</div>
+	</div>
+	</div>
+	</footer>
+<!------------------------Footer Ends---------------------------------------->
 	
   <script src="js/jquery-1.11.1.js"></script>
   
