@@ -1,3 +1,5 @@
 # EFFICIENT-SEARCHING-IN-ERP-SYSTEM-FOR-HOSPITAL-SERVICES
-The project is divided into 3 modules- 1. Doctor Appointment(By Akash Kumar)- In this module a user will be able to make an appointment with the doctor. User will be able to find the nearest area or locality where doctor is available.                    2. Hospital Bed Booking (By Abhishek Raj Keshri)- In this module, user will be able to find the hospital where he/she will easily get the bed in emergency. The website will be portable to handheld devices, so during urgent emergency user can just tap for an emergency and can get instant help from nearby hospital as soon as possible.                                                           3. Medical Ecommerce Store(By Adhar Sharma)- In this part of the project user will be able purchase the medical items like medicines, tonics, lotions easily from the website.
-This part is the Medical Ecommerce Store(By Adhar Sharma). First extract Medi-Store.rar file, then open ecommerce.html. I have added product.html although this part is still not complete, but this part shows the brief of details of the product user selects.
+
+A project meant to serve online services of hospital at user end .
+
+Online Medical Store(Ecommerce) : This module allows users to look for their product in the website and make their purchase through the website from anywhere.
