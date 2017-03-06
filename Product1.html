@@ -1,0 +1,305 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>  
+<meta charset="utf-8">  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<meta name="description" content="">
+<meta name="author" content="">
+  
+  <title>Medi-Store</title>
+  
+  <!-- Bootstrap Core CSS -->  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  
+  <!-- Custom CSS -->  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+ <script>
+function openWin() {
+    window.open("Seller.php");
+}
+function openCart() {
+    window.open("cart.php");
+}
+
+</script> 
+
+</head>
+<body>  
+  
+  
+  <!-----------------------navbar start------------------------------------------->
+  
+  <!-- Navigation -->  
+  <nav class="navbar-inverse" role="navigation">    
+  <div class="container-fluid">      
+  
+  <!-- Brand and toggle get grouped for better mobile display -->      
+  <div class="navbar-header">        
+  <button type="button" class="navbar-toggle collapsed" datatoggle="collapse" data-target="#bs-example-navbar-collapse-1">          
+  <span class="sr-only">Toggle navigation</span>          
+  <span class="icon-bar"></span>          
+  <span class="icon-bar"></span>          
+  <span class="icon-bar"></span>        
+  </button>        
+  <a class="navbar-brand" href="ecommerce.php">Medi-Store</a>      
+  </div>
+  
+  <!-- Collect the nav links, forms, and other content for toggling -->      
+  <div class="collapse navbar-collapse" id="bs-example-navbarcollapse-1"> 
+	
+	<div class="collapse navbar-collapse" id="bs-example-navbarcollapse-1"> 
+	<ul class="nav navbar-nav">          
+	<li class="dropdown">            
+	<a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#">Medical Accessories</a></li>
+			<li><a href="#">Baby Products</a></li>
+			<li><a href="#">Beauty Products</a></li>
+			<li><a href="#">Skin Product</a></li>
+			<li><a href="#">Rare &amp; Exclusive</a></li>
+			<li><a href="#">Fever</a></li>
+			<a href="category.html" class="list-group-item">Anti-Biotics</a>          
+			<a href="category.html" class="list-group-item">Hair Care</a>
+			<li class="divider"></li>              
+			<li><a href="ecommerce.html">All Categories</a></li>
+		</ul>      
+	</li>          
+	<li><a href="#">Doctor Appointment</a></li>          
+	<li><a href="#">Hospital Bed Booking</a></li>        
+	</ul>
+	
+	<ul class="nav navbar-nav navbar-right">          
+	<li><a href="#"><span class="badge pull-right"> </span><i class="glyphicon glyphicon-shopping-cart"></i></a></li>          
+	<li><a href="account.html"><i class="glyphicon glyphiconuser"></i></a></li>          
+	<li><button type="button" class="btn btn-success" data-toggle="modal" datatarget="#myModal">Sign in</button></li>        
+	</ul> 
+	
+  </div><!-- /.navbar-collapse -->    
+  </div><!-- /.container-fluid -->  
+  </nav>  <!-- jQuery Version 1.11.0 --> 
+
+
+  <!-- Modal -->  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+  <!---Modal End------> 
+  
+   
+
+
+	
+<ul class="row">      
+	<li>
+	</div>  
+	 
+
+	
+<!--------------------About Product-------------->	
+<li>
+<div class="col-sm-6 col-md-4">            
+	<div class="thumbnail">              
+	<img src="https://res.cloudinary.com/du8msdgbj/image/upload/w_380,h_380,c_fit,a_ignore,q_60/v1477031111/jozh0uvrf2hi9xo6lyfz.jpg" alt="">
+	<li>
+	<div class="col-sm-6"> 
+	 <h1 class="pull-right"><strong>Price: Rs. 135</strong></h1>              
+	 <h4><a href="product.html">HIMALAYA ASHVAGANDHA TABLET</a></h4>              
+	 <p>Ashvagandha Tablet is pure herb extract that contains Ashvagandha (Withania somnifera). Ashvagandha rejuvenates the mind and helps to increase the immunity. Ashvagandha is also referred to as to as “Indian ginseng” as it acts as a natural stress reliever. Ashvagandha Tablet maintains a healthy balance between the nervous system, endocrine glands and immune system. It also helps in boosting up the sexual energy in men. Ashvagandha is traditionally referred to as an aphrodisiac which promotes sexual health by uplifting the mood, reducing anxiety, improving energy levels and fertility.<br><br>
+ 
+	Directions of use:<br>
+	Recommended dose is 1 tablet twice daily after meals, with water. <br><br>
+ 
+	Note:<br>
+	Ashvagandha tablets are 100% vegetarian. They are also free from sugar, artificial colours, artificial flavours, preservatives, and gelatin. 
+	<br><br>
+	Use under medical supervision </p> 
+	</div></li>
+	</li>
+
+<form role="form">                
+<p>Select No. of Product: </p>
+<input id="id1" type="number" max="10" min="1">
+<button onclick="myFunction()">OK</button>
+
+
+<script> 
+function myFunction() {
+	var txt = "";
+    if (document.getElementById("id1").validity.rangeOverflow) {
+        txt = "Value too large";
+    } else {
+        txt = "Input OK";
+    } 
+    document.getElementById("demo").innerHTML = txt;
+
+}
+</script>
+
+    <form>
+    <div class="form-group">                  
+	<div class="btn-group">
+	<label>Quantity</label>
+	                    
+	<button type="button" class="btn btn-default">60-T Pack</button>                    
+	<button type="button" class="btn btn-default">80-T Pack</button>                    
+	<button type="button" class="btn btn-default">100-T Pack</button>                    
+	</div>                
+	
+       
+	<form>
+		<input type="button" value="Contact Seller" onclick="openWin()">
+	</form>
+	
+	<form>
+		<input type="button" value="Add to Cart" onclick="openCart()">
+	</form>
+	</div>              
+	</form> 
+
+	
+	
+<div class="col-md-9">
+
+	
+	</li>
+</ul>	
+
+<!----------Detail-------->
+<div class="description">   
+<p> Directions of use:<br>
+	Recommended dose is 1 tablet twice daily after meals, with water. <br><br>
+ 
+	Note:<br>
+	Ashvagandha tablets are 100% vegetarian. They are also free from sugar, artificial colours, artificial flavours, preservatives, and gelatin. 
+	<br><br>
+	Use under medical supervision </p>                      
+</div>          
+<div class="ratings">            
+<p class="pull-right"></p>            
+<p>              
+<span class="glyphicon glyphicon-star"></span>              
+<span class="glyphicon glyphicon-star"></span>              
+<span class="glyphicon glyphicon-star"></span>              
+<span class="glyphicon glyphicon-star"></span>              
+<span class="glyphicon glyphicon-star-empty"></span>              
+           
+</p>          
+</div>        
+</div>
+
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalreview">Leave a Review</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalreview" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Leave a Review</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+		<label class="col-sm- control-label">
+		<button type="button" class="btn btn-default">SUBMIT</button>
+		</label>
+		<div class="col-sm-8">
+		<input type="text" name="review" placeholder="ENTER YOUR REVIEW" class="form-control" id="reviewId"/>
+		</div>
+		</div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<!----------Detail End----->
+
+<!-----Review--------->
+
+
+<div class="row">            
+<div class="col-md-12">              
+<span class="glyphicon glyphicon-star"></span>              
+<span class="glyphicon glyphicon-star"></span>              
+<span class="glyphicon glyphicon-star"></span>              
+<span class="glyphicon glyphicon-star"></span>              
+<span class="glyphicon glyphicon-star-empty"></span>              
+             
+<span class="pull-right"></span>              
+<p> <em></em></p>              
+<p></p>
+</div>          
+</div>
+
+
+<!-----Review End----->
+<!--------------------About Product-------------->
+	
+<!------------------------Footer---------------------------------------->
+<footer class="page-footer" style="background-color: rgb(4, 36, 48); color: white; margin-top: 26px; padding: 12px 8px 8px; margin-bottom: 0px; font-size: 14px; text-align: center;">
+	<div class="container">
+	<div style="margin-bottom: 24px;">
+	<a href="/aboutUs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">About Us</a>
+	<a href="/contactUs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Contact Us</a>
+	<a href="/faqs" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">FAQ's</a>
+	<a href="/tnc" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Terms &amp; Conditions</a>
+	<a href="/privacyPolicy" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Privacy Policy</a>
+	<a href="/cancellationRefunds" style="margin: 8px 1rem 0px; font-size: 1rem; display: inline-block;">Cancellation &amp; Refunds</a>
+	
+	</div>
+	<div style="margin-bottom: 24px;">
+	<a href="https://www.facebook.com/1mgOfficial" target="_blank" title="Like us on Facebook" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Like us on Facebook" src="/assets/images/facebook.svg" style="height: 100%;"></a>
+	<a href="https://twitter.com/1mgofficial" target="_blank" title="Follow us on Twitter" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Follow us on Twitter" src="/assets/images/twitter.svg" style="height: 100%;"></a>
+	<a href="https://plus.google.com/+Healthkartplus" target="_blank" title="Follow us on Google+" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Folow us on Google+" src="/assets/images/google-plus.svg" style="height: 100%;"></a>
+	<a href="https://www.linkedin.com/company/5230742" target="_blank" title="Visit us on LinkedIn" style="margin: 0px 10px; font-size: 16px; display: inline-block; height: 48px;"><img alt="Visit us on LinkedIn" src="/assets/images/linkedin.svg" style="height: 100%;"></a></div></div>
+	<div class="footer-copyright" style="height: initial; line-height: initial;">
+	<div class="container">
+	<div style="margin-bottom: 12px;">© 2017 </div>
+	<div style="width: 100%; height: 56px; text-align: center; vertical-align: middle; padding: 12px;">
+	<span style="vertical-align: middle; height: 100%; display: inline-block;"></span><img alt="MEDI-STORE" src="/assets/images/footer-logo.svg" style="max-width: 100%; max-height: 100%; vertical-align: middle; display: initial;">
+	</div>
+	</div>
+	</div>
+	</footer>
+<!------------------------Footer Ends---------------------------------------->
+	
+  
+  <!-----------------------navbar end-------------------------------------------------------------------------------------->
+  </body> 
+  </html>	
