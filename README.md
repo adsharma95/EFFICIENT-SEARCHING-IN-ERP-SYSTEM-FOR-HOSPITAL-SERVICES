@@ -15,6 +15,9 @@ Github URL- https://github.com/AkashKumar6095/DoctorAppointment
 Guide- Mr. Gauri Shankar Mishra
 
 This website is being developed by using HTML, CSS, JavaScript, Bootstrap and for the connectivity of the database from the backend to the frontend we have used 'PHP'.
+
 We are using Notepad++ for writing the code.
+
 We are using Xampp for the localhost server.
+
 We are using phpMyAdmin for creating and maintaining the database.
