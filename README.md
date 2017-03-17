@@ -7,7 +7,6 @@ Online Medical Store(Ecommerce) : This module allows users to look for their pro
 
 Project Partners- Abhishek Raj Kesri(Working on Hospital Bed Booking System Module)
                   Github URL- https://github.com/Abhishek015/ERP-System-For-Hospital-Services/tree/MARCH
-                  
                   Akash Kumar(Working on Doctor Appointment System)
                   Github URL- https://github.com/AkashKumar6095/DoctorAppointment
                   
